@@ -1,0 +1,19 @@
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Date of birth</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr (click)="onSelect(student)" *ngFor="let student of students">
+            <button class="id"><td>{{student.id}}</td></button>
+            <td>{{student.name}}</td>
+            <td>{{student.gender}}</td>
+            <td>{{student.dateOfBirth}}</td>
+        </tr>
+    </tbody>
+</table>

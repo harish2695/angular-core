@@ -1,0 +1,9 @@
+[
+    {"id":1,"name":"Harish","gender":"male","age":"26"},
+    {"id":2,"name":"Sama","gender":"male","age":"27"},
+    {"id":3,"name":"Rama","gender":"male","age":"29"},
+    {"id":4,"name":"Bheema","gender":"male","age":"33"},
+    {"id":5,"name":"Soma","gender":"male","age":"19"},
+    {"id":6,"name":"Joy","gender":"male","age":"22"},
+    {"id":7,"name":"Samantha","gender":"female","age":"32"}
+]

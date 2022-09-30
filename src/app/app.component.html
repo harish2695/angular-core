@@ -1,0 +1,33 @@
+<!-- <h1> Hello {{title}}</h1> -->
+<!-- <router-outlet></router-outlet> -->
+<!-- <app-interpolations></app-interpolations> -->
+<!-- <app-data-binding></app-data-binding> -->
+<!-- <app-pipes></app-pipes> -->
+
+<!-- <app-parent-component-interaction [parentName]="parentProperty"></app-parent-component-interaction> -->
+
+
+<!-- 
+Your text: <input type="text" [(ngModel)]="userText"/>
+<br />
+<br /> -->
+<!-- <simple-component [simpleInput]="userText"></simple-component> -->
+<!-- <h2>Student details with angular services</h2> -->
+<!-- <app-studentlist></app-studentlist> -->
+<div class="home">
+    <h3>Hello Harish Welcome to Angular</h3>
+    
+    <ul>
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/students">Students</a></li>
+    </ul>
+
+
+    <ul *ngFor="let student of students">
+        <li>ID: {{student.id}}</li>
+        <li>Name: {{student.name}}</li>
+        <li>Age: {{student.age}}</li>
+        <li>Gender: {{student.gender}}</li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>

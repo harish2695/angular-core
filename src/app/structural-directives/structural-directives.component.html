@@ -1,0 +1,60 @@
+<h2>Structural directives</h2>
+
+<!-- ngfor directive -->
+<div *ngFor="let name of names; index as i">
+    <h3>
+        {{i}}. {{name}} 
+    </h3>
+    <h2>
+        {{getDate(currentData)}}
+    </h2>
+</div>
+
+<button nz-button nzType="primary">Primary Button</button>
+
+
+<!-- ngswitch directive -->
+<br />
+<br />
+<br />
+
+<select name="fruit" id="cars" [(ngModel)]="fruit">
+    <option value="apple">Apple</option>
+    <option value="orange">Orange</option>
+    <option value="mango">Mango</option>
+  </select>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  
+  <input type="radio" [(ngModel)]="fruit"  value="mango" (click)="onClick()">
+  <label>Mango</label>
+
+<div [ngSwitch]="fruit">
+    <div *ngSwitchCase="'orange'">You like Orange</div>
+    <div *ngSwitchCase="'apple'">You like Apple</div>
+    <div *ngSwitchCase="'mango'">You like Mango</div>
+    <div *ngSwitchDefault>Select Again</div>
+     
+</div>
+
+
+<!-- ngIf direcive -->
+ 
+<button (click)="toggleSwitch()" >Bulb</button>
+
+<div *ngIf="switch;then switchOn else switchOff"></div>
+<br />
+<br />
+<br />
+<ng-template #switchOn>
+    <p>hdbfhdbhbdhv</p>
+</ng-template>
+<br />
+
+
+<ng-template #switchOff>
+    okeifdjefejfnUHUHUHUHUHUUHU
+</ng-template>
